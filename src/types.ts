@@ -11,7 +11,6 @@ export declare namespace RelayJsonRpc {
 
   export interface SubscribeParams {
     topic: string;
-    ttl: number;
   }
 
   export interface PublishParams {
