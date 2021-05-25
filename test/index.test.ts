@@ -1,4 +1,4 @@
-import RelayProvider, {
+import {
   isSubscribeRequest,
   isPublishRequest,
   isUnsubscribeRequest,
@@ -58,16 +58,6 @@ const TEST_SUBSCRIPTION_REQUEST = {
     },
   },
 };
-
-describe('RelayProvider', () => {
-  let provider: RelayProvider;
-  beforeAll(async () => {
-    provider = new RelayProvider(TEST_RPC_URL);
-  });
-  it('init', async () => {
-    expect(provider).toBeTruthy();
-  });
-});
 
 describe('Validators', () => {
   describe('request', () => {

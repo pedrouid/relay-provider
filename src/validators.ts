@@ -1,4 +1,4 @@
-import { JsonRpcRequest } from '@json-rpc-tools/utils';
+import { JsonRpcRequest } from '@json-rpc-tools/types';
 import { hasParamsLength, methodEndsWith } from './misc';
 import { RelayJsonRpc } from './types';
 
