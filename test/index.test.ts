@@ -13,8 +13,6 @@ import {
   isSubscriptionParams,
 } from '../src';
 
-const TEST_RPC_URL = 'wss://staging.walletconnect.org';
-
 const TEST_SUBSCRIBE_REQUEST = {
   id: 1,
   jsonrpc: '2.0',
