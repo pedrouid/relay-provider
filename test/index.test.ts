@@ -1,4 +1,4 @@
-import RelayProvider, {
+import {
   isSubscribeRequest,
   isPublishRequest,
   isUnsubscribeRequest,
@@ -12,8 +12,6 @@ import RelayProvider, {
   isUnsubscribeParams,
   isSubscriptionParams,
 } from '../src';
-
-const TEST_RPC_URL = 'wss://staging.walletconnect.org';
 
 const TEST_SUBSCRIBE_REQUEST = {
   id: 1,
@@ -58,16 +56,6 @@ const TEST_SUBSCRIPTION_REQUEST = {
     },
   },
 };
-
-describe('RelayProvider', () => {
-  let provider: RelayProvider;
-  beforeAll(async () => {
-    provider = new RelayProvider(TEST_RPC_URL);
-  });
-  it('init', async () => {
-    expect(provider).toBeTruthy();
-  });
-});
 
 describe('Validators', () => {
   describe('request', () => {
