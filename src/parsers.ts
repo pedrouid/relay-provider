@@ -59,6 +59,7 @@ export function parseUnsubscribeRequest(
   const params = request.params as RelayJsonRpc.UnsubscribeParams;
 
   assertType(params, 'id');
+  assertType(params, 'topic');
 
   return params;
 }
